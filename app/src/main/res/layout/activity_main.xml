@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/showInterstitialBtn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/showBannerAdBtn"
+        android:layout_centerHorizontal="true"
+        android:background="#FF8BEF"
+        android:text="Show interstitional Ad"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/showBannerAdBtn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="#FFAB00"
+        android:text="Show Banner Ad"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/showCreditBtn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/showBannerAdBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#FFAB00"
+        android:text="Credits"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <!-- The backgound for this layout is yellow for
+    specific purpose. Sometimes the Banner Ads take time to load
+    and have white background which is hard to see when testing/running the
+    app multiple times-->
+    <RelativeLayout
+        android:id="@+id/bannerAdContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFC107"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/showAdButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Show Ad"-->
+    <!--        android:layout_centerInParent="true" />-->
+
+</RelativeLayout>
